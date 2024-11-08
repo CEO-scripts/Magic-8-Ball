@@ -1,4 +1,6 @@
 
+
+
 function ballAnswer(){
     //Creating a randomNumber Variable
     const randomNumber = Math.floor(Math.random() * 8)
@@ -63,7 +65,6 @@ function ballReveal(){
     }
     else if(userName && !(userQuestion)){
         alert(`I'm sorry ${userName}, I can't work with that `)
-        ballReveal()
     }
     else if(!(userName) && userQuestion){
         alert(`Stranger asked 8 Ball "${userQuestion}"`)
@@ -71,9 +72,7 @@ function ballReveal(){
     }
     else{
         alert("I'm sorry Stranger, I can't work with that")
-        ballReveal()
     }
         
 }
 
-ballReveal()
